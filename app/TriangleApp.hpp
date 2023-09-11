@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../window/NonWindow.hpp"
+#include "NonPipeline.hpp"
 
 namespace non {
 
@@ -13,5 +14,6 @@ public:
 
 private:
     NonWindow nonWindow{WIDTH, HEIGHT, "Triangle App"};
+    NonPipeline nonPipeline{"shaders/shader.vert.spv", "shaders/shader.frag.spv"};
 };
 }// namespace non
